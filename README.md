@@ -61,7 +61,6 @@ This performs core-tree-based decomposition with specified parameters.
 - `@2` — Graph file name  
 - `@3` — Tree-width allowed  
 - `@4` — Number of reference nodes (set to 1 in our experiment)
-- 
 This runs landmark-based distance queries using the decomposed core tree.
 
 ## 📝 Note
