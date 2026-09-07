@@ -1868,57 +1868,6 @@ void CoreTree::txt_to_file(string graph_name)
 	}
 
 	fclose(out);
-
-	file_name = "record/" + graph_name;
-	// FILE* out1 = fopen(file_name.c_str(), "w");
-	// if (out == NULL)
-	// {
-	// 	fprintf(stderr, "can't write the graph file \n");
-	// 	cerr << graph_name << endl;
-	// 	exit(1);
-	// }
-
-	// for (int i = 0; i < n; i++)
-	// {
-	// 	if (record_dis[i] != 0)
-	// 		fprintf(out1, "%d %d\n", i, record_dis[i]);
-	// }
-
-	// fclose(out);
-
-	file_name = "used/" + graph_name;
-	FILE *out2 = fopen(file_name.c_str(), "w");
-	if (out2 == NULL)
-	{
-		fprintf(stderr, "can't write the graph file \n");
-		cerr << graph_name << endl;
-		exit(1);
-	}
-	for (int i = 0; i < n; i++)
-	{
-		if (used_dis[i] != 0)
-			fprintf(out2, "%d %d\n", i, used_dis[i]);
-	}
-	fclose(out2);
-	// FILE *out1 = fopen("txt/BFS_result.txt", "w");
-	// if (out1 == NULL) {
-	//     fprintf(stderr, "can't write the graph file \n");
-	//     exit(1);
-	// }
-
-	// vector<int> diss;
-	// int ecc = 0;
-	// for(int i=0;i<n;i++){
-	// 	ecc = 0;
-	// 	diss.resize(n,0);
-	// 	// cout<<i<<endl;
-	// 	BFS(i,diss);
-	// 	for(int j=0;j<n;j++){
-	// 		ecc = max(ecc,diss[j]);
-	// 	}
-	// 	fprintf(out1, "%d %d\n", i,ecc);
-	// }
-	// fclose(out1);
 }
 
 void CoreTree::compute_ecc(int lid)
